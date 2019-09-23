@@ -146,4 +146,6 @@
 
     <!-- Daily data usage -->
     <string name="daily_data_usage_title">Today\'s usage</string>
+
+    <string name="unknown_battery_level">Unknown</string>
 </resources>

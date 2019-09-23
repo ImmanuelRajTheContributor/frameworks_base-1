@@ -4942,6 +4942,24 @@ public final class Settings {
          */
         public static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
 
+		/**
+         * Expand immediately arrow
+         */
+        public static final String EXPAND_IMMEDIATELY = "expand_immediately";
+
+
+        /** Whether to resume audio stream if it was paused by user interaction over volume bar
+         *
+         * @hide
+         */
+        public static final String RESUME_AUDIO_STREAM = "resume_audio_stream";
+
+        /** Whether to pause audio stream if it was paused by user interaction over volume bar
+         *
+         * @hide
+         */
+        public static final String PAUSE_AUDIO_STREAM = "pause_audio_stream";
+
         /**
          * Enable/Disable screenshot sound
          * @hide
@@ -5653,27 +5671,6 @@ public final class Settings {
 	* @hide
 	*/
 	public static final String SHOW_BATTERY_PERCENT = "dummy_show_battery_percent";
-
-        /**
-         * @hide
-         */
-	public static final String SMART_CHARGING_RESET_STATS = "smart_charging_reset_stats";
-
-        /**
-         * Adaptive playback
-         * Automatically pause media when the volume is muted and
-         * will resume automatically when volume is restored.
-         *   0 = disabled
-         *   1 = enabled
-         * @hide
-         */
-        public static final String ADAPTIVE_PLAYBACK_ENABLED = "adaptive_playback_enabled";
-
-        /**
-         * Adaptive playback's timeout in ms
-         * @hide
-         */
-        public static final String ADAPTIVE_PLAYBACK_TIMEOUT = "adaptive_playback_timeout";
 
         /** @hide */
         public static final String BACK_GESTURE_HEIGHT = "back_gesture_height";
