@@ -108,4 +108,10 @@
     <dimen name="expand_right_margin">38dp</dimen>
     <dimen name="expand_bottom_margin">85dp</dimen>
     <dimen name="odi_captions_margin_right">0dp</dimen>
+
+    <!-- Custom header -->
+    <dimen name="qs_header_image_offset">25dp</dimen>
+    <dimen name="qs_header_image_side_margin">4dp</dimen>
+    <dimen name="qs_header_image_top_margin">4dp</dimen>
+    <dimen name="qs_header_image_bottom_margin">4dp</dimen>
 </resources>
