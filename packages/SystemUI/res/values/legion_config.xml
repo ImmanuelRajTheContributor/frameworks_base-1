@@ -53,4 +53,7 @@
     <dimen name="expand_right_margin">38dp</dimen>
     <dimen name="expand_bottom_margin">85dp</dimen>
     <dimen name="odi_captions_margin_right">0dp</dimen>
+
+	<!-- Whether to use the mask for the quicksettings icons-->
+    <bool name="config_useMaskForQs">true</bool>
 </resources>
