@@ -4965,6 +4965,12 @@ public final class Settings {
          * @hide
          */
         public static final String PAUSE_AUDIO_STREAM = "pause_audio_stream";
+		
+		/**
+         * Whether to use new QS panel bg tint or not
+         * @hide
+         */
+        public static final String QS_PANEL_BG_USE_NEW_TINT = "qs_panel_bg_use_new_tint";
 
         /**
          * Enable/Disable screenshot sound
@@ -5996,6 +6002,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(PROXIMITY_ON_WAKE);
 			PRIVATE_SETTINGS.add(QS_HEADER_STYLE);
 			PRIVATE_SETTINGS.add(QS_TILE_STYLE);
+			PRIVATE_SETTINGS.add(QS_PANEL_BG_USE_NEW_TINT);
         }
 
         /**
