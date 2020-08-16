@@ -30,4 +30,7 @@
     <color name="ringer_icon_tint">@color/accent_mirror</color>
     <color name="ripple_colors">#9a9a9a</color>  
 
+    <!-- QS -->
+    <color name="quick_settings_status_bar_background_color">#ff000000</color>
+
 </resources>
