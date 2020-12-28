@@ -71,6 +71,36 @@ public class ThemesUtils {
         "com.android.system.switch.telegram", // 4
     };
 
+    // Panel_bg
+    public static final String[] PANEL_BG_STYLE = {
+        "com.jrinfected.panel.batik", // 1
+        "com.jrinfected.panel.kece", // 2
+        "com.jrinfected.panel.outline", // 3
+    };
+
+    // Qs Shape
+    public static final String[] QS_SHAPE = {
+        "com.jrinfected.qs.shape.a",
+        "com.jrinfected.qs.shape.b",
+        "com.jrinfected.qs.shape.c",
+        "com.jrinfected.qs.shape.d",
+        "com.jrinfected.qs.shape.e",
+        "com.jrinfected.qs.shape.f",
+        "com.jrinfected.qs.shape.g",
+        "com.jrinfected.qs.shape.h",
+        "com.jrinfected.qs.shape.i",
+        "com.jrinfected.qs.shape.j",
+        "com.jrinfected.qs.shape.k",
+        "com.jrinfected.qs.shape.l",
+        "com.jrinfected.qs.shape.m",
+        "com.jrinfected.qs.shape.n",
+        "com.jrinfected.qs.shape.o",
+        "com.jrinfected.qs.shape.p",
+        "com.jrinfected.qs.shape.q",
+        "com.jrinfected.qs.shape.r",
+        "com.jrinfected.qs.shape.s",
+    };
+
     public static void updateSwitchStyle(IOverlayManager om, int userId, int switchStyle) {
         if (switchStyle == 0) {
             stockSwitchStyle(om, userId);
