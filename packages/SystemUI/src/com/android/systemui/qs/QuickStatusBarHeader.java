@@ -518,14 +518,11 @@ public class QuickStatusBarHeader extends RelativeLayout implements
 		mHeaderImageEnabled = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0,
                 UserHandle.USER_CURRENT) == 1;
-        updateResources();
+	        updateResources();
+                updateDataUsageView();
+		updateDataUsageImage();
     }
 
-    private void updateSettings() {
-	    	updateDataUsageView();
-        updateDataUsageImage();
-     }
-	 
 	 private void updateDataUsageView() {
         if (mDataUsageView.isDataUsageEnabled() != 0) {
             if (com.android.internal.util.legion.LegionUtils.isConnected(mContext)) {
