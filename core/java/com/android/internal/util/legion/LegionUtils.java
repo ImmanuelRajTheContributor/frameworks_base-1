@@ -47,6 +47,16 @@ import android.content.om.IOverlayManager;
 import android.content.om.OverlayInfo;
 
 import com.android.internal.R;
+import android.Manifest;
+import android.hardware.fingerprint.FingerprintManager;
+import android.util.TypedValue;
+import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Locale;
+
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import java.util.List;
@@ -339,4 +349,10 @@ public class LegionUtils {
             return hasNavigationBar == 1;
         }
     }
-}
+
+    public static int getThemeAccentColor (final Context context) {
+        final TypedValue value = new TypedValue();
+        context.getTheme().resolveAttribute(android.R.attr.colorAccent, value, true);
+        return value.data;
+    }
+ }
