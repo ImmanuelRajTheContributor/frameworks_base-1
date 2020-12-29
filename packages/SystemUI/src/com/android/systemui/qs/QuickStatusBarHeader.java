@@ -506,13 +506,13 @@ public class QuickStatusBarHeader extends RelativeLayout implements
         updateStatusIconAlphaAnimator();
         updateHeaderTextContainerAlphaAnimator();
         updatePrivacyChipAlphaAnimator();
-    }
 
     private void updateSettings() {
-	    	updateDataUsageView();
-        updateDataUsageImage();
-     }
-	 
+	        updateResources();
+                updateDataUsageView();
+		updateDataUsageImage();
+    }
+
 	 private void updateDataUsageView() {
         if (mDataUsageView.isDataUsageEnabled() != 0) {
             if (com.android.internal.util.legion.LegionUtils.isConnected(mContext)) {

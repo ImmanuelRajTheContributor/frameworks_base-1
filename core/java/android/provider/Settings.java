@@ -5396,15 +5396,6 @@ public final class Settings {
         public static final String QS_TILE_ICON_PRIMARY = "qs_tile_icon_primary";
 
         /**
-         * 0 - Default
-         * 1 - Round with ring
-         * 2 - Two-toned round with ring
-         * 3 - Squircle with ring
-         * @hide
-         */
-        public static final String QS_TILE_STYLE = "qs_tile_style";
-
-        /**
          * @hide
          */
         public static final String SMART_CHARGING = "smart_charging";
@@ -5771,6 +5762,11 @@ public final class Settings {
          * @hide
          */
         public static final String QS_HEADER_STYLE = "qs_header_style";
+		
+		/**
+         * @hide
+         */
+        public static final String QS_TILE_STYLE = "qs_tile_style";
 
         /**
          * Keys we no longer back up under the current schema, but want to continue to
@@ -5963,6 +5959,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK_DATE_POSITION);
             PRIVATE_SETTINGS.add(PROXIMITY_ON_WAKE);
 			PRIVATE_SETTINGS.add(QS_HEADER_STYLE);
+			PRIVATE_SETTINGS.add(QS_TILE_STYLE);
         }
 
         /**
