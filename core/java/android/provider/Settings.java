@@ -5591,29 +5591,6 @@ public final class Settings {
         public static final String LOCKSCREEN_CHARGING_ANIMATION = "lockscreen_charging_animation";
 
         /**
-        * by.tikkiX2
-        * @hide
-        */
-        public static final String QS_PANEL_TYPE_BACKGROUND = "qs_panel_type_background";
-
-        /** @hide */
-        public static final String QS_PANEL_CUSTOM_IMAGE = "qs_panel_custom_image";
-
-        /** @hide */
-        public static final String QS_PANEL_CUSTOM_IMAGE_BLUR = "qs_panel_custom_image_blur";
-
-        /**
-         * Whether to change the transparency of the qs panel
-         * @hide
-         */
-        public static final String QS_PANEL_BG_ALPHA = "qs_panel_bg_alpha";
-
-        /**
-         * @hide
-         */
-        public static final String QS_NEW_BG_ENABLED = "qs_new_bg_enabled";
-
-        /**
          * Setting to determine whether or not to show the battery percentage in the qs status bar header.
          *    0 - Show remaining time
          *    1 - Show percentage
@@ -5967,10 +5944,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(LOCKSCREEN_WEATHER_SHOW_TEMP);
             PRIVATE_SETTINGS.add(LOCKSCREEN_WEATHER_SHOW_CITY);
 	          PRIVATE_SETTINGS.add(LOCKSCREEN_WEATHER_SHOW_IMAGE);
-            PRIVATE_SETTINGS.add(QS_PANEL_BG_ALPHA);
-            PRIVATE_SETTINGS.add(QS_PANEL_TYPE_BACKGROUND);
-            PRIVATE_SETTINGS.add(QS_PANEL_CUSTOM_IMAGE);
-            PRIVATE_SETTINGS.add(QS_PANEL_CUSTOM_IMAGE_BLUR);
             PRIVATE_SETTINGS.add(QS_SHOW_BATTERY_PERCENT);
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK);
             PRIVATE_SETTINGS.add(STATUSBAR_CLOCK_STYLE);
