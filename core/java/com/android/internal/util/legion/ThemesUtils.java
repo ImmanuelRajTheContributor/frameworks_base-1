@@ -76,6 +76,7 @@ public class ThemesUtils {
         "com.jrinfected.panel.batik", // 1
         "com.jrinfected.panel.kece", // 2
         "com.jrinfected.panel.outline", // 3
+	"com.legion.panel.outline", // 4
     };
 
 // QS Tile Styles
