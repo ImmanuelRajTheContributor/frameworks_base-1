@@ -5624,6 +5624,11 @@ public final class Settings {
          */
         public static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
 
+        /**
+         * @hide
+         */
+	public static final String SMART_CHARGING_RESET_STATS = "smart_charging_reset_stats";
+
 	/**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add

@@ -4359,7 +4359,7 @@ public class StatusBar extends SystemUI implements DemoMode,
                     uri.equals(Settings.Secure.getUriFor(Settings.Secure.LOCKSCREEN_DATE_SELECTION)) ||
                     uri.equals(Settings.Secure.getUriFor(Settings.Secure.CENTER_TEXT_CLOCK))) {
                 updateKeyguardStatusSettings();
-            } else if (uri.equals(Settings.System.getUriFor(Settings.System.LOCKSCREEN_CHARGING_ANIMATION))) ||
+            } else if (uri.equals(Settings.System.getUriFor(Settings.System.LOCKSCREEN_CHARGING_ANIMATION))) {
 		updateChargingAnimation();
 			} else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_HEADER_STYLE))) {
                 stockQSHeaderStyle();
@@ -4377,6 +4377,7 @@ public class StatusBar extends SystemUI implements DemoMode,
           		} else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_TILE_STYLE))) {
                 stockTileStyle();
                 updateTileStyle();
+                mQSPanel.getHost().reloadAllTiles();
 			} else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_BG_USE_NEW_TINT))) {
                 mQSPanel.getHost().reloadAllTiles();
             }
