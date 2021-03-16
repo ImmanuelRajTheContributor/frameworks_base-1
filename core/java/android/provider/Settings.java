@@ -5410,15 +5410,6 @@ public final class Settings {
         public static final String CUSTOM_TEXT_CLOCK_FONT_SIZE = "custom_text_clock_font_size";
 
         /**
-         * 0 - Default
-         * 1 - Round with ring
-         * 2 - Two-toned round with ring
-         * 3 - Squircle with ring
-         * @hide
-         */
-        public static final String QS_TILE_STYLE = "qs_tile_style";
-
-        /**
          * @hide
          */
         public static final String SMART_CHARGING = "smart_charging";
