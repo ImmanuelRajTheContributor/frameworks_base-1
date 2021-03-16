@@ -49,7 +49,6 @@ import com.android.systemui.Interpolators;
 import com.android.systemui.R;
 import com.android.systemui.plugins.NavigationEdgeBackPlugin;
 import com.android.systemui.statusbar.VibratorHelper;
-import com.android.systemui.volume.SystemUIInterpolators;
 
 public class NavigationBarEdgePanel extends View implements NavigationEdgeBackPlugin {
 
@@ -291,7 +290,7 @@ public class NavigationBarEdgePanel extends View implements NavigationEdgeBackPl
 
         mArrowDisappearAnimation = ValueAnimator.ofFloat(0.0f, 1.0f);
         mArrowDisappearAnimation.setDuration(DISAPPEAR_ARROW_ANIMATION_DURATION_MS);
-        mArrowDisappearAnimation.setInterpolator(new SystemUIInterpolators.LogDecelerateInterpolator(800f, 2.1f, 0));
+        mArrowDisappearAnimation.setInterpolator(Interpolators.FAST_OUT_SLOW_IN);
         mArrowDisappearAnimation.addUpdateListener(animation -> {
             mDisappearAmount = (float) animation.getAnimatedValue();
             invalidate();

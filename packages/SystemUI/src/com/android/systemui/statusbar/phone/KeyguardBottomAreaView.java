@@ -88,7 +88,6 @@ import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.statusbar.policy.PreviewInflater;
 import com.android.systemui.tuner.LockscreenFragment.LockButtonFactory;
 import com.android.systemui.tuner.TunerService;
-import com.android.systemui.volume.SystemUIInterpolators;
 
 import java.util.concurrent.Executor;
 
@@ -751,16 +750,12 @@ public class KeyguardBottomAreaView extends FrameLayout implements View.OnClickL
     }
 
     private void startFinishDozeAnimationElement(View element, long delay) {
-        element.animate()
-                .alpha(0f)
-                .setInterpolator(new SystemUIInterpolators.LogAccelerateInterpolator(200, 0))
-                .setStartDelay(delay)
-                .setDuration(DOZE_ANIMATION_ELEMENT_DURATION);
+        element.setAlpha(0f);
         element.setTranslationY(element.getHeight() / 2);
         element.animate()
                 .alpha(1f)
                 .translationY(0f)
-                .setInterpolator(new SystemUIInterpolators.LogDecelerateInterpolator(800f, 2.1f, 0))
+                .setInterpolator(Interpolators.LINEAR_OUT_SLOW_IN)
                 .setStartDelay(delay)
                 .setDuration(DOZE_ANIMATION_ELEMENT_DURATION);
         updateCameraIconColor();

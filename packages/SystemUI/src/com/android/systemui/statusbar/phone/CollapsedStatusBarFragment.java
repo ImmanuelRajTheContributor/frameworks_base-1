@@ -49,7 +49,6 @@ import com.android.systemui.statusbar.policy.EncryptionHelper;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.statusbar.policy.NetworkController;
 import com.android.systemui.statusbar.policy.NetworkController.SignalCallback;
-import com.android.systemui.volume.SystemUIInterpolators;
 
 /**
  * Contains the collapsed status bar and handles hiding/showing based on disable flags
@@ -379,7 +378,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
                 .alpha(0f)
                 .setDuration(160)
                 .setStartDelay(0)
-                .setInterpolator(new SystemUIInterpolators.LogAccelerateInterpolator(200, 0))
+                .setInterpolator(Interpolators.ALPHA_OUT)
                 .withEndAction(() -> v.setVisibility(invisible ? View.INVISIBLE : View.GONE));
     }
 
@@ -399,7 +398,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         v.animate()
                 .alpha(1f)
                 .setDuration(FADE_IN_DURATION)
-                .setInterpolator(new SystemUIInterpolators.LogDecelerateInterpolator(800f, 2.1f, 0))
+                .setInterpolator(Interpolators.ALPHA_IN)
                 .setStartDelay(FADE_IN_DELAY)
 
                 // We need to clean up any pending end action from animateHide if we call
@@ -411,7 +410,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         if (mKeyguardStateController.isKeyguardFadingAway()) {
             v.animate()
                     .setDuration(mKeyguardStateController.getKeyguardFadingAwayDuration())
-                    .setInterpolator(new SystemUIInterpolators.LogAccelerateInterpolator(200, 0))
+                    .setInterpolator(Interpolators.LINEAR_OUT_SLOW_IN)
                     .setStartDelay(mKeyguardStateController.getKeyguardFadingAwayDelay())
                     .start();
         }
