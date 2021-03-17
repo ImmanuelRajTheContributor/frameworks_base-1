@@ -515,15 +515,12 @@ public class QuickStatusBarHeader extends RelativeLayout implements
     }
 
     private void updateSettings() {
-		mHeaderImageEnabled = Settings.System.getIntForUser(getContext().getContentResolver(),
+	        mHeaderImageEnabled = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0,
                 UserHandle.USER_CURRENT) == 1;
-        updateResources();
-    }
-
-    private void updateSettings() {
+	        updateResources();
 	    	updateDataUsageView();
-        updateDataUsageImage();
+        	updateDataUsageImage();
      }
 	 
 	 private void updateDataUsageView() {

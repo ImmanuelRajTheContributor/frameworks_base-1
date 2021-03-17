@@ -676,7 +676,6 @@ public class StatusBar extends SystemUI implements DemoMode,
     protected boolean mPanelExpanded;
     private IOverlayManager mOverlayManager;
     private UiModeManager mUiModeManager;
-    private IOverlayManager mOverlayManager;
     protected boolean mIsKeyguard;
     private LogMaker mStatusBarStateLog;
     protected NotificationIconAreaController mNotificationIconAreaController;
@@ -4404,6 +4403,7 @@ public class StatusBar extends SystemUI implements DemoMode,
     private void setHeadsUpStoplist() {
         if (mPresenter != null)
             mPresenter.setHeadsUpStoplist();
+    }
 
 	// Switches qs header style from stock to custom
     public void updateQSHeaderStyle() {
