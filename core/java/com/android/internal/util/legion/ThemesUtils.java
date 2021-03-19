@@ -72,11 +72,11 @@ public class ThemesUtils {
     };
 
     // Panel_bg
-    public static final String[] PANEL_BG_STYLE = {
-        "com.jrinfected.panel.batik", // 1
-        "com.jrinfected.panel.kece", // 2
-        "com.jrinfected.panel.outline", // 3
-    };
+//    public static final String[] PANEL_BG_STYLE = {
+//        "com.jrinfected.panel.batik", // 1
+//        "com.jrinfected.panel.kece", // 2
+//        "com.jrinfected.panel.outline", // 3
+//    };
 
 // QS Tile Styles
 public static final String[] QS_TILE_THEMES = {

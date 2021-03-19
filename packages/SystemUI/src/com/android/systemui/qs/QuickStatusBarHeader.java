@@ -506,9 +506,9 @@ public class QuickStatusBarHeader extends RelativeLayout implements
         updateStatusIconAlphaAnimator();
         updateHeaderTextContainerAlphaAnimator();
         updatePrivacyChipAlphaAnimator();
+    }
 
     private void updateSettings() {
-	        updateResources();
                 updateDataUsageView();
 		updateDataUsageImage();
     }
